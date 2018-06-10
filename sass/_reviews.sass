@@ -1,0 +1,65 @@
+.reviews
+    background-color: #f4f4f4
+    padding-top: 55px
+    padding-bottom: 71px
+    padding-left: 10%
+    padding-right: 10%
+    
+    // text-align: center
+    &-slider
+        margin-left: auto
+        margin-right: auto
+        &__img
+            margin: auto
+    &-title
+        text-align: center
+        font-size: 27px
+        font-weight: 700
+        line-height: 18px
+        text-transform: uppercase
+        color: #313131
+        &:after
+            content: ''
+            display: block
+            background: url(../img/products/wavelength.png) center no-repeat
+            height: 6px
+            margin-top: 12px
+            margin-bottom: 47px
+            
+            
+
+
+.reviews-slick-prev,
+.reviews-slick-next
+    font-size: 0
+    line-height: 0
+    position: absolute
+    top: 50%
+    display: block
+    width: 20px
+    height: 20px
+    padding: 0    
+    transform: translate(0, -50%)
+    cursor: pointer
+    color: transparent
+    border: none
+    outline: none
+    background: transparent
+    text-shadow: 0 0 10px rgba(0,0,0,0.5)
+.reviews-slick-prev
+    // background-color: red
+    left: -25px
+    border: none
+    background-color: #ff9d00
+    background: url(..\img\slider\prev-arrow.png) center no-repeat 
+    width: 10px
+    height: 47px    
+.reviews-slick-next
+    right: -25px
+    width: 10px
+    height: 47px
+    background-color: #ff9d00
+    border: none
+    background: url(..\img\slider\next-arrow.png) center no-repeat 
+
+                

@@ -1,0 +1,53 @@
+.customers
+    padding-top: 95px
+    padding-bottom: 61px
+    text-align: center 
+    
+    
+    &-title
+        font-size: 27px
+        font-weight: 700
+        line-height: 18px
+        text-transform: uppercase
+        color: #313131
+        
+        &::after
+            content: ''
+            background: url(../img/products/wavelength.png) center no-repeat
+            display: block
+            height: 6px
+            margin-top: 17px
+            margin-bottom: 33px
+    &-img        
+        width: 212px
+        height: 130px
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        background-color: #ffffff
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+$i: 1
+@for $i from 1 through 12
+    .customers-img-#{$i} 
+        background: url(../img/our_client/imagebaw-#{$i}.png) center no-repeat
+        width: 212px
+        height: 130px
+        margin: auto
+        &:hover
+            background: url(../img/our_client/imageCol-#{$i}.png) center no-repeat
+            
+
+
+
+
+
+// .customers-imghf
+//     background: url(../img/our_client/imagebaw-1.png) center no-repeat
+//     width: 212px
+//     height: 130px
+//     // background-size: cover
+// //     &:hover
+// //         background: url(../img/our_client/imageCol-1.png) center no-repeat
+        
+        

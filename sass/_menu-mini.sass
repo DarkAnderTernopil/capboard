@@ -1,0 +1,117 @@
+.menu-button
+
+    display: none
+    position: fixed
+    width: 50px
+    height: 50px
+    left: 10px
+    top: 5px
+    background-color: #ffffff
+    border-radius: 50%
+    z-index: 1000
+    span
+        position: absolute
+        display: block
+        width: 23px
+        height: 2px
+        left: 50%
+        transform: translateX(-50%)
+        top: 50%
+        transform: translateZ(-50%)    
+        background-color: $colordark
+        // transition: all 0.2s
+        
+        &:before
+            position: absolute
+            display: block
+            width: 23px
+            height: 2px            
+            
+            bottom: 5px
+            transition: all 0.2s
+               
+            background-color: $colordark
+            content: ''
+        &:after
+            position: absolute
+            display: block
+            width: 23px
+            height: 2px 
+            transition: all 0.2s    
+            
+            top: 5px
+               
+            background-color: $colordark
+            content: ''
+.menu-active
+    span  
+        background-color: transparent
+        // transition: all 0.2s
+        &:before
+            transform: rotateZ(-135deg) 
+            bottom: 0px
+            transition: all 0.2s
+        &:after
+            transform: rotateZ(135deg)
+            top: 0px 
+            transition: all 0.2s
+.manu-mini
+    display: none
+    padding-left: 0
+
+    list-style: none
+    background-color: rgba($colordark,0.7)
+    text-align: center
+    padding-top: 50px
+    padding-bottom: 50px
+    position: fixed
+    width: 100%
+    height: 100%
+    right: 0
+    left: 0
+    top: -2%
+    z-index: 1000
+    transition: all 1.5s
+    li    
+        padding-bottom: 25px
+        padding-top: 25px
+        transition: all 1.5s
+         
+        &:hover
+            background-color: rgba($colorbutton,0.6)
+            border-radius: 5px
+    & a
+        text-align: center
+        font-size: 12px
+        font-weight: 400
+        // line-height: 22px
+        text-transform: uppercase
+        color: #ffffff
+        position: relative
+        // margin-bottom: 50px
+        transition: all 1.5s
+        
+        text-decoration: none
+        &:after
+            position: absolute
+            right: -10px
+            top: 0
+            // display: block
+            width: 2px
+            height: 15px
+            background-color: $colorlight
+            content: ''
+        &:before
+            position: absolute
+            left: -10px
+            top: 0
+            // display: block
+            width: 2px
+            height: 15px
+            background-color: $colorlight
+            content: ''
+        
+        
+.manu-mini-active
+    display: block
+    
